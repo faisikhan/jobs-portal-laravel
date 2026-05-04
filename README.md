@@ -141,12 +141,10 @@ Create a new Nginx site config:
 sudo nano /etc/nginx/sites-available/jobs-portal
 ```
 
-Paste the following (replace `your-server-ip` with your actual IP or domain):
-
 ```nginx
 server {
     listen 80;
-    server_name your-server-ip;
+    server_name _;
 
     root /var/www/jobs-portal-laravel/public;
     index index.php index.html;
